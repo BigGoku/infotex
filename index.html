@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+</head>
+<body>
+	<div id="content">
+		<div>
+			<table>
+				<thead>
+					<tr><th class="nameCol" id="name">Имя</th><th class="lastNameCol" id="lastName">Фамилия</th><th class="aboutCol" id="about">Описание</th><th class="eyeColorCol" id="eyeColor">Цвет глаз</th></tr>	
+				</thead>
+				<tbody></tbody>
+			</table>
+			<div>
+				<button id="prevButton">Предыдущая</button>
+				<button id="nextButton">Следущая</button>
+			</div>
+		</div>
+		<div>
+			<div>
+				<p><input class="showHideCol" type="checkbox" checked name="Имя" value="nameCol">Имя</p>
+				<p><input class="showHideCol" type="checkbox" checked name="Фамилия" value="lastNameCol">Фамилия</p>
+				<p><input class="showHideCol" type="checkbox" checked name="Описание" value="aboutCol">Описание</p>
+				<p><input class="showHideCol" type="checkbox" checked name="Цвет глаз" value="eyeColorCol">Цвет глаз</p>
+			</div>
+			<div id="formEdit">
+				<p><label for="nameText">Имя</label><input type="text" id="nameText"></p>
+				<p><label for="lastNameText">Фамилия</label><input type="text" id="lastNameText"></p>
+				<p><label for="aboutText">Описание</label><textarea name="" id="aboutText" cols="30" rows="10"></textarea></p>
+				<p><label for="eyeColorText">Цвет глаз</label><input type="text" id="eyeColorText"></p>
+				<p><button id="save">Сохранить</button><button id="cancel">Отменить</button></p>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
